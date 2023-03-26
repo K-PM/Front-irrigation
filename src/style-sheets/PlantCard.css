@@ -1,0 +1,43 @@
+.plant-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px 10px 300px;
+    margin-bottom: 20px;
+    background-color: #00bfff;
+    color: #fff;
+    border-radius: 5px;
+    padding-block: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .plant-card-image {
+    margin-right: 20px;
+  }
+  
+  .plant-card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .plant-card-info {
+    flex: 1;
+  }
+  
+  .plant-card-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .plant-card-info p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .plant-card-date {
+    font-size: 12px;
+  }
+ 

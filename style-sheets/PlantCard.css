@@ -1,0 +1,56 @@
+.plant-cards{
+  margin-top: 160px;
+}
+
+.plant-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px 10px 100px;
+  margin-bottom: 20px;
+  /* background-color: #59c3e7; */
+  background-image: linear-gradient(to bottom, #0080ff, #00bfff);
+  color: #fff;
+  border-radius: 5px;
+  padding-block: 10px;
+  flex-wrap: wrap;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px -5px 10px 245px;
+  min-height: 100px; /* ajustar la altura mínima para que se ajuste al aside */
+}
+  
+  .plant-card-image {
+    margin-right: 20px;
+  }
+  
+  .plant-card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .plant-card-info {
+    flex: 1;
+  }
+  
+  .plant-card-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .plant-card-info p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .plant-card-date {
+    font-size: 12px;
+  }
+ 
+  .logo-planta{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+  }

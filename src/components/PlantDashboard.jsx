@@ -2,6 +2,8 @@ import React from "react";
 import PlantCard from "./PlantCard";
 import PlantAside from "./PlantAside";
 import '../style-sheets/PlantDashBoard.css'
+import logo2 from '../images/logos2.png';
+import agualogo from '../images/agualogo.png';
 
 class PlantDashboard extends React.Component {
   render() {
@@ -10,66 +12,19 @@ class PlantDashboard extends React.Component {
         <PlantAside />
         <div className="plant-cards">
           <PlantCard
-            image="ruta/a/tu/imagen1"
-            title="PLANTA 1"
+            image={logo2}
+            title="PLANTA"
             percentage="50%"
             date="26 de marzo de 2023"
           />
           <PlantCard
-            image="ruta/a/tu/imagen2"
-            title="PLANTA 2"
-            percentage="75%"
-            date="26 de marzo de 2023"
-          />
-                      {/* <PlantCard
-            image="ruta/a/tu/imagen1"
-            title="PLANTA 1"
+            image={logo2}
+            title="PLANTA"
             percentage="50%"
             date="26 de marzo de 2023"
           />
-          <PlantCard
-            image="ruta/a/tu/imagen2"
-            title="PLANTA 2"
-            percentage="75%"
-            date="26 de marzo de 2023"
-          />
-                    <PlantCard
-            image="ruta/a/tu/imagen1"
-            title="PLANTA 1"
-            percentage="50%"
-            date="26 de marzo de 2023"
-          />
-          <PlantCard
-            image="ruta/a/tu/imagen2"
-            title="PLANTA 2"
-            percentage="75%"
-            date="26 de marzo de 2023"
-          />
-                    <PlantCard
-            image="ruta/a/tu/imagen1"
-            title="PLANTA 1"
-            percentage="50%"
-            date="26 de marzo de 2023"
-          />
-          <PlantCard
-            image="ruta/a/tu/imagen2"
-            title="PLANTA 2"
-            percentage="75%"
-            date="26 de marzo de 2023"
-          />
-                    <PlantCard
-            image="ruta/a/tu/imagen1"
-            title="PLANTA 1"
-            percentage="50%"
-            date="26 de marzo de 2023"
-          />
-          <PlantCard
-            image="ruta/a/tu/imagen2"
-            title="PLANTA 2"
-            percentage="75%"
-            date="26 de marzo de 2023"
-          /> */}
-
+          {/* Aqui se añaden más CARD Con un condicional */}
+  
         </div>
       </div>
     );

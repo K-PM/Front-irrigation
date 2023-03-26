@@ -1,19 +1,25 @@
 .plant-aside {
-    background-color: #f8f8f8;
-    border-right: 1px solid #e8e8e8;
-    padding: 20px;
-    text-align: center;
-    width: 200px;
-    height: 100%;
-    position: fixed;
-    top: 10;
-    left: 0;
-    background-color: tomato;
+  background-image: linear-gradient(to bottom, #0d4985, #3dcfff);
+  /* border: 5px solid #0e4495; */
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  min-height: 100vh;
+  position: fixed;
+  top: 165px;
+  border-radius: 5px;
+  left: 0;
+  /* background-color: tomato; */
+  color:#072f57;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px 10px 5px 25px;
+}
 
-  }
 
 .plant-list {
-  margin-left: 20%; /* ajustar el margen para que la lista no se solape con el aside */
+  margin-top: 100px; /* ajustar el margen superior para que la lista no se solape con el aside */
+  height: calc(100vh - 100px); /* ajustar la altura para que el listado de plantas se ajuste a la ventana del navegador */
+  overflow-y: auto; /* agregar desplazamiento vertical si el contenido es mayor que la altura */
 }
 
   
@@ -33,12 +39,8 @@
   .plant-aside img:last-child {
     margin-top: auto;
   }
-
-
-/* 
+ 
 .logout {
-  position: absolute;
-  bottom: 0;
-} */
-
-  
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  color:aquamarine;
+}

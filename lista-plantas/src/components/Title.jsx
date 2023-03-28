@@ -20,7 +20,7 @@ function Title() {
 
     return (  
 <header>
-    <img src={V2} class="logo"/>
+    <img src={V2} class="Principal"/>
     <div className="tito">
         <h3>{currentDate}</h3>
         <h3>I2P_URY</h3>

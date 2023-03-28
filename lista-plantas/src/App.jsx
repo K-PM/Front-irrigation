@@ -1,17 +1,19 @@
 import React from 'react'
 import './components/Title'
-import Title from './components/Title'
-// import PlantCard from './components/PlantCard'
 import PlantDashboard from './components/PlantDashboard'
-
+import Logincomponet from './components/Login'
+import Register from './components/Register'
+import Table from './components/Table';
 
 function App() {
   return (
     <div>
-      <Title/>
-      {/* <PlantCard/> */}
-      <PlantDashboard/>
+      <PlantDashboard></PlantDashboard>
     </div>
   )
 }
 export default App
+
+
+
+

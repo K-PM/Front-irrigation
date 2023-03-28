@@ -4,6 +4,7 @@ import user from '../images/USER.png';
 import logOut from '../images/logoutB.png'
 
 function PlantAside() {
+    
     return (
         <aside className="plant-aside">
             <div>

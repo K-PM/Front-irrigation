@@ -2,9 +2,12 @@ import React from "react";
 import PlantCard from "./PlantCard";
 import PlantAside from "./PlantAside";
 import logo2 from '../images/plataLogo.png';
+import Title from "./Title";
 
 function PlantDashboard(){
 
+
+  
 const plantas =[
   {
     image:logo2,

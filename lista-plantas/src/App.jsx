@@ -5,12 +5,15 @@ import './components/Title'
 import PlantDashboard from './components/PlantDashboard'
 import Login from './components/Login'
 import Registro from './components/Registro'
+import Table from "./components/Table"
 
 function App() {
+
   return (
     <div>
       <PlantDashboard></PlantDashboard>
     </div>
   )
 }
+
 export default App

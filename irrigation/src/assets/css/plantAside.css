@@ -1,0 +1,26 @@
+.plant-aside {
+    background-color: #1A2431;/* border: 5px solid #0e4495; */
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    position: fixed;
+    border-radius: 5px;
+    /* background-color: tomato; */
+    color:#ffffff;
+  }
+    
+    .users {
+      width: 45%;
+      margin-top: 30px;
+      border-radius: 50%;
+    }
+   
+  .logoutLogo{
+    margin-top: 145%;
+    width: 20%;
+    }
+  .logout {
+   text-decoration: none;
+    color:aquamarine;
+    
+  }

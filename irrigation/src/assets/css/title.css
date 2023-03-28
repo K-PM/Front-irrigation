@@ -1,0 +1,19 @@
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1A2431;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+    
+    .logo {
+      width: 120px;
+    }
+    
+    .tito{
+      margin-right: 90%;
+      font-size: 11px;
+      color:aliceblue;
+    }

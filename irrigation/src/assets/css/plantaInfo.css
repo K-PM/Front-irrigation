@@ -1,0 +1,32 @@
+.plant-info-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1769ce62;
+  }
+
+  
+  .plant-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-left: 70px;
+    align-content: center;
+    background-color: transparent;
+  }
+  
+  .logo-planta3{
+    width: 15%;
+  }
+  .logo-planta2{
+    width: 10%;
+    margin-left: 150px;
+  }
+
+  .logo-planta1{
+    width: 55%;
+  }
+  .nom{
+    margin-right: 15%;
+  }

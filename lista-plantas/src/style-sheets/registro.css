@@ -1,14 +1,18 @@
-img{
-    width: 35%;
+.aguaN{
+    width: 10%;
+    margin-top: 6%;
+    margin-left: 45%;
 }
-h2{
-    font-family:'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 33px;
-    line-height: 44px;
 
+.po{
+    margin-left: 35%;
 }
+.po h2{font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+margin-left: 20%;
+}
+
 .caja{
     background-color: #1D2938;
     border-radius: 5%;

@@ -1,10 +1,10 @@
 import React from "react";
-import Icono from "../images/V1.png";
+import Icono from "../images/aguaN.png";
 import '../style-sheets/registro.css';
-function Register() {
+function Registro() {
     return (
         <>
-       <img src={Icono}></img>
+       <img className="aguaN" src={Icono}></img>
        <div className="po">
             <h2>I2P_URI</h2>
             <div className="caja">
@@ -21,4 +21,4 @@ function Register() {
      );
 }
 
-export default Register;
+export default Registro;

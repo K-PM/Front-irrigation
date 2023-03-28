@@ -20,24 +20,11 @@ function Title() {
 
     return (  
 <header>
-  <div class="left">
-    <img src={V2} alt="SISTEMA DE RIEGO AVANZADO [+]" class="logo"/>
-  </div>
-  <div class="content">
-    <div class="right">
-      <div class="color1">
-            <h3>{currentDate}</h3>
-      </div>
-      <div class="color2">
-        <div>
-          <h3>I2P_URY</h3>
-        </div>
-        {/* <div>
-          hola 3
-        </div> */}
-      </div>
+    <img src={V2} class="logo"/>
+    <div className="tito">
+        <h3>{currentDate}</h3>
+        <h3>I2P_URY</h3>
     </div>
-  </div>
 </header>
 
     );

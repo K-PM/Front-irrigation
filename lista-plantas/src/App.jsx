@@ -4,15 +4,14 @@ import Title from './components/Title'
 // import PlantCard from './components/PlantCard'
 import PlantDashboard from './components/PlantDashboard'
 
-function App() {
 
+function App() {
   return (
-    <div className="App">
+    <div>
       <Title/>
       {/* <PlantCard/> */}
       <PlantDashboard/>
     </div>
   )
 }
-
 export default App

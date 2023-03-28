@@ -1,23 +1,14 @@
-.plant-cards{
-  margin-top: 160px;
-}
 
 .plant-card {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px 10px 100px;
-  margin-bottom: 20px;
-  /* background-color: #59c3e7; */
-  background-image: linear-gradient(to bottom, #0080ff, #00bfff);
-  color: #fff;
-  border-radius: 5px;
-  padding-block: 10px;
-  flex-wrap: wrap;
-  font-family:'Frankli<n Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 10px -5px 10px 245px;
-  min-height: 100px; /* ajustar la altura mínima para que se ajuste al aside */
+  background-color: #1A2431;
+  color: #1A69A8;
+  border-radius:25px;
+  margin-top: 0.2%;
+  margin-left: 16.5%;
 }
   
   .plant-card-image {

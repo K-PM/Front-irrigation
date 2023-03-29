@@ -1,0 +1,79 @@
+/* .div-principal{
+    max-height: 400px; 
+    overflow-x: auto; 
+} */
+
+.div-principal {
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px 100px 0px 100px;
+    text-align: center;
+}
+
+.table-container {
+    overflow-y: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    overflow-y: scroll;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #1e4b6b;
+    color: #87cefa;
+    /* color: #ddd; */
+}
+
+th {
+    padding: 8px;
+    text-align: center;
+    background-color: #1e4b6b;
+    border: 1px solid #ddd;
+    width: 400px;
+    color: #87cefa;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    font-size: medium;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-generate-pdf {
+    background: linear-gradient(to bottom right, #55aaff, #ffffff);
+    border: none;
+    border-radius: 10px;
+    color: rgb(11, 52, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: oblique;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.btn-generate-pdf:hover {
+    background: linear-gradient(to bottom right, #1d75ff, #ffffff);
+    color: #fff;
+}

@@ -1,0 +1,73 @@
+*{
+  margin: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  background-image: linear-gradient(to bottom, #1a54be, #233136);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  /* margin: 20px; */
+}
+  
+  .logo {
+    width: 120px;
+    background-color: transparent;
+  }
+  
+  .content {
+    display: grid; /* Utilizamos la propiedad grid para crear una rejilla */
+    grid-template-columns: 1fr 1fr; /* Creamos dos columnas de igual ancho */
+    grid-template-rows: auto auto; /* Creamos dos filas que se ajusten al contenido */
+    align-items: center;
+    column-gap: 20px; /* Añadimos un espacio entre las dos columnas */
+    background-color: transparent;
+  }
+  
+  .left {
+    flex: 1;
+    background-color: transparent;
+  }
+  
+  .right {
+    flex: 1;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  .color1 {
+    /* background-color: darkgray; */
+    background-image: linear-gradient(to bottom, #166ec5, #35b8e4);
+    display: flex; /* Utilizamos la propiedad flex para colocar lo s elementos en dos filas */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+  }
+  
+  .color2 {
+    /* background-color: gray; */
+    background-image: linear-gradient(to bottom, #35b8e4, #166ec5);
+    display: flex; /* Utilizamos la propiedad flex para colocar lo s elementos en dos filas */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+  }
+  
+  .subtitulo{
+    background-color: transparent;
+  }

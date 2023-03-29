@@ -1,11 +1,11 @@
 import Header from '../components/Header';
-import PlantDashboard from '../components/PlantDashboard'
+import TablePlant from '../components/TablePlant'
 
 function IrrigationPage() {
     return ( 
         <>
             <Header/>
-            <PlantDashboard/>
+            <TablePlant/>
         </>
      );
 }

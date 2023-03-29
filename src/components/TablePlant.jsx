@@ -14,23 +14,23 @@ function TablePlant() {
     const [listIrrigation, setListIrrigation] = useState([]);
 
     useEffect(()=>{
-        console.log('a')
-    },[listIrrigation])
+        setListIrrigation([
+            {
+                id:1,
+                moistureState: 80,
+                previousMoistureState: 20,
+                date: 'domingo 20 de marzo de 2023' //va aparecer de otra manera
+            },
+            {
+                id:2,
+                moistureState: 83,
+                previousMoistureState: 18,
+                date: 'lunes 21 de marzo de 2023' //va aparecer de otra manera
+            }
+        ])
+    },[])
 
-    setListIrrigation([
-        {
-            id:1,
-            moistureState: 80,
-            previousMoistureState: 20,
-            date: 'domingo 20 de marzo de 2023' //va aparecer de otra manera
-        },
-        {
-            id:2,
-            moistureState: 83,
-            previousMoistureState: 18,
-            date: 'lunes 21 de marzo de 2023' //va aparecer de otra manera
-        }
-    ])
+   
 
     return (  
         <>

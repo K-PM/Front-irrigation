@@ -1,8 +1,15 @@
 import '../assets/css/plantCard.css'
 
 
-function PlantCard ({image, title, percentage, date, id, handleClick}){
+function PlantCard ({image, title, percentage, date, id}){
     
+    
+  const handleClick=(e)=>{
+    const idSystem=e.target.id;
+    navigate(`/irrigation/${idSystem}`);
+}
+
+
     
 return (
     <div className="plant-card" id={id} onClick={handleClick}>

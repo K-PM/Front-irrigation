@@ -3,18 +3,19 @@ import userDefault from "../assets/image/USER.png";
 import logOut from "../assets/image/logoutB.png";
 import userNoDefaul from "../assets/image/aguaN.png";
 import {UseUser} from "../context/UserProvider"
+import { useState } from "react";
+import { useEffect } from "react";
+import userprofile from "../assets/image/USER.png"
 
 function PlantAside() {
-  
-    const [userTria, setUserTria]= useState();
+    const [user, setUser]= useState([]);
 
-
-    setUserTria(
-      {
-        name: juan,
-        profilePicture: userNoDefaul
-      }
-    )
+    useEffect(()=>{
+      setUser({
+        name: 'juan',
+        profilePicture: userprofile
+      })
+    },[]);
 
     const handleClick=()=>{
         navigate('/home')

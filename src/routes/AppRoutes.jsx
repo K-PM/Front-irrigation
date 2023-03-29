@@ -14,18 +14,8 @@ function AppRoutes() {
                 <Route path="/*" element={<HomePage />} />
                 <Route path="/login" element={<HomePage />} />
                 <Route path="/register" element={<RegisterPage />} />
-                <Route
-                  path="/system"
-                  element={
-                    <SystemPage />
-                  }
-                />
-                <Route
-                  path="/irrigation"
-                  element={
-                    <IrrigationPage />
-                  }
-                />
+                <Route path="/system" element={<SystemPage />}/>
+                <Route path="/irrigation" element={<IrrigationPage />}/>
               </Routes>
         </UserProvider>
     </BrowserRouter>

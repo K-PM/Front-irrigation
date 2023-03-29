@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import TablePlant from "../components/TablePlant";
+// import TablePlant from "../components/TablePlant";
 import PlantDashboard from "../components/PlantDashboard";
 import PlantAside from "../components/PlantAside";
 

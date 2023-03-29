@@ -1,66 +1,63 @@
 import io from "socket.io-client";
 
-const socket = io("http://127.0.0.1:4000");
+const socket = io("http://3.133.107.127:4000");
 
 
-const sendMessage = (socketRec, message) => {
-  socketRec.emit("message", message);
+const sendLogin = (socketRec, form) => {
+    socketRec.emit('login',form);
+    
 };
 
-const pullMessages = (socketRec, fuction) => {
-  socketRec.on("message", fuction);
-
-  return () => {
-    socketRec.off("message", fuction);
-  };
+const sendRegister = (socketRec, form) => {
+    socketRec.emit('regUser', form);
 };
 
-const sendName = (socketRec, name) => {
-  socketRec.emit("addNameUser", name);
+const sendIdSystemtoIrrigation = (socketRec, id) => {
+    socketRec.emit('irrigationAsk', id);
+    
 };
 
-const pulluser = (socketRec, fuction) => {
-  socketRec.on("addNameUser", fuction);
-};
-
-const pullUsers = (socketRec, fuction) => {
-  socketRec.on("update", fuction);
-};
-const updateUser = (socketRec) => {
-  socketRec.emit("update");
-};
-
-
-const checkState = (socketRec) => {
-    try {
-        console.log(connection);
-        socketRec.emit("getState");
-      } catch (error) {
-        connection = false;
-      }
+const sendIdUserToSystem = (socketRec, id) => {
+    socketRec.emit('systemAsk', id);
 
 };
 
-const getState = (socketRec) => {
-  socketRec.on("getState", (data) => {
-    try {
-        console.log(data);
-        connection = true;
-      } catch (error) {
-        connection = false;
-      }
-  });
+socket.on('loginRes', (data)=>{
+    console.log(data);
+});
+socket.on('registerRes', (data)=>{
+    console.log(data);
+});
+socket.on('systemRes', (data)=>{
+    console.log(data);
+});
+socket.on('irrigationRes', (data)=>{
+    console.log(data);
+});
+
+
+/*
+const receivedLogin = (socketRec, fuction) => {
+    
 };
+
+
+const receivedRegister = (socketRec, fuction) => {
+
+};
+const receivedResponseSystem = (socketRec, fuction) => {
+    
+};
+
+const receivedResponseIrrigation = (socketRec, fuction) => {
+};
+*/
+
 
 export default socket;
 export {
-  sendMessage,
-  pullMessages,
-  sendName,
-  pulluser,
-  pullUsers,
-  updateUser,
-  checkState,
-  getState,
-  connection,
+    sendLogin,
+    sendRegister,
+    sendIdSystemtoIrrigation,
+    sendIdUserToSystem,
 };

@@ -1,8 +1,9 @@
 import React, { useMemo, useState, useEffect} from "react";
 
+import socket, {sendLogin, sendRegister} from "../utilities/socker-methods";
+
 
 import UserContext from "./UserContext";
-
 
 
 const UserProvider=({children})=>{
@@ -13,25 +14,15 @@ const UserProvider=({children})=>{
     
 
     useEffect(()=>{
-        console.log("hola")
-    },[]);
+        console.log('a');
+    },[user]);
 
-    const login=async(form)=>{
-        sendDataLogin(socket, form);
-        
+    const login=(form)=>{
+        sendLogin(socket, form);
     }
 
-    const register=async(form)=>{
-        sendDataRegister(socket, form);
-        await receiveDataOfRegister(socket, (data)=>{
-            if(data==false){
-                console.log("El usuario ya existe");
-                return false;
-            }else{
-                console.log("Usuario creado satisfactoriamente");
-                return true;
-            }
-        } )
+    const register=(form)=>{
+        sendRegister(socket, form)
     }
 
     const setTokens = accessToken => {

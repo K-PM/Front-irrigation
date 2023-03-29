@@ -8,8 +8,22 @@ function PlantDashboard(){
 
 
   const [plants, setPlants] = useState([]);
-
-
+    useEffect(()=>{
+      console.log('a');
+  },[plants]);
+  
+  setPlants([
+    {
+      id:1,
+      moistureState: 80,
+      date: "domingo 20 de marzo de 2023"
+    },
+    {
+      id:2,
+      moistureState: 83,
+      date: "lunes 21 de marzo de 2023"
+    },
+  ])
   const navigate = useNavigate();
 
   const handleClick=(e)=>{

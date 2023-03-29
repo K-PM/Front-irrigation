@@ -1,14 +1,22 @@
 import "../assets/css/PlantAside.css";
 import userDefault from "../assets/image/USER.png";
 import logOut from "../assets/image/logoutB.png";
+import userNoDefaul from "../assets/image/aguaN.png";
 import {UseUser} from "../context/UserProvider"
 
 function PlantAside() {
-    const {logout, user}=UseUser();
+  
+    const [userTria, setUserTria]= useState();
 
+
+    setUserTria(
+      {
+        name: juan,
+        profilePicture: userNoDefaul
+      }
+    )
 
     const handleClick=()=>{
-        logout();
         navigate('/home')
     }
     
@@ -17,6 +25,7 @@ function PlantAside() {
       <div>
         <img src={user.profilePicture!=""?user.profilePicture : userDefault} className="users" />
         <h3>${user.name}</h3>
+        //aqui tiene que ir un input de tipo file
         <img src={logOut} className="logoutLogo" />
       </div>
       <input

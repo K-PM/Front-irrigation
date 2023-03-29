@@ -4,8 +4,6 @@ import SystemPage from "../page/SystemPage";
 import  RegisterPage from "../page/RegisterPage";
 import  IrrigationPage from "../page/IrrigationPage";
 import UserProvider from "../context/UserProvider";
-// import PrivateRoutes from "../routes/PrivateRoutes";
-
 
 function AppRoutes() {
   return (

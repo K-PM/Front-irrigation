@@ -5,10 +5,10 @@
     width: 200px;
     position: fixed;
     border-radius: 5px;
-    color:#ffffff;
   }
-    
-    .users {
+  
+  .users {
+      color:#ffffff;
       width: 45%;
       margin-top: 30px;
       border-radius: 50%;
@@ -19,7 +19,7 @@
     width: 20%;
     }
   .logout {
-   text-decoration: none;
-    color:aquamarine;
+    text-decoration: none;
+    color: #1A2431;
     
   }

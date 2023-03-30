@@ -3,6 +3,8 @@ import io from "socket.io-client";
 const socket = io("http://3.133.107.127:4000");
 
 
+
+
 const sendLogin = (socketRec, form) => {
     socketRec.emit('login',form);
     
@@ -21,20 +23,6 @@ const sendIdUserToSystem = (socketRec, id) => {
     socketRec.emit('systemAsk', id);
 
 };
-
-socket.on('loginRes', (data)=>{
-    console.log(data);
-});
-socket.on('registerRes', (data)=>{
-    console.log(data);
-});
-socket.on('systemRes', (data)=>{
-    console.log(data);
-});
-socket.on('irrigationRes', (data)=>{
-    console.log(data);
-});
-
 
 /*
 const receivedLogin = (socketRec, fuction) => {

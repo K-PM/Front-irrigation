@@ -1,10 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import '../assets/css/plantCard.css'
 
 
-function PlantCard ({image, title, percentage, date, id}){
+function PlantCard ({image, title, percentage, id}){
+
+    const navigate = useNavigate();
     
-    
-  const handleClick=(e)=>{
+    const handleClick=(e)=>{
     const idSystem=e.target.id;
     navigate(`/irrigation/${idSystem}`);
 }
@@ -13,11 +15,9 @@ function PlantCard ({image, title, percentage, date, id}){
     
 return (
     <div className="plant-card" id={id} onClick={handleClick}>
-        <img src={image}  className='logo-planta'/>
-        <h2>{title}</h2>
-        {/* <img src="ruta/a/la/imagen2" alt="porcentaje" /> */}
-        <h2>{percentage}</h2>
-        <h2>{date}</h2>
+        <img id={id} src={image}  className='logo-planta'/>
+        <h2> id={id} {title}</h2>
+        <h2 id={id}>{percentage}</h2>
     </div>
     );
 

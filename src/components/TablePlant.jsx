@@ -5,30 +5,43 @@ import ima2 from "../assets/image/soltar.png";
 import ima3 from "../assets/image/Azul.png";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { UseUser } from "../context/UserProvider";
+import socket,{sendIdSystemtoIrrigation}from "../utilities/socker-methods";
+UseUser
+
 
 
 function TablePlant() {
 
-    const idSystem=1;
+    const objectid=useParams();
+
 
     const [listIrrigation, setListIrrigation] = useState([]);
+    const [isEmpty, setIsEmtpy]=useState(true)
 
     useEffect(()=>{
-        setListIrrigation([
-            {
-                id:1,
-                moistureState: 80,
-                previousMoistureState: 20,
-                date: 'domingo 20 de marzo de 2023' //va aparecer de otra manera
-            },
-            {
-                id:2,
-                moistureState: 83,
-                previousMoistureState: 18,
-                date: 'lunes 21 de marzo de 2023' //va aparecer de otra manera
-            }
-        ])
+        console.log(isEmpty)
+        if(isEmpty){
+            sendIdSystemtoIrrigation(socket, objectid.id);
+            console.log('idSystem: ', objectid.id)
+        }
+
     },[])
+    
+    socket.on('irrigationRes',(data)=>{
+        console.log("irrigation: ",data);
+        if(isEmpty){
+            setListIrrigation(data.response.data)
+            setIsEmtpy(false);
+        }
+        if(listIrrigation.length==0){
+            console.log("no hay datos")
+          }       
+        console.log(isEmpty);
+      });
+
+
 
    
 
@@ -52,12 +65,19 @@ function TablePlant() {
             </tr>
             </thead>
             <tbody>
+                
             {listIrrigation.map((irrigation) => (
-                <tr key={irrigation.id}>
+                irrigation!=null&&irrigation!=undefined?(
+                    <tr key={irrigation.id}>
                     <td>{irrigation.moistureState}</td>
                     <td>{irrigation.previousMoistureState}</td>
                     <td>{irrigation.date}</td>
                 </tr>
+                ):(
+                    <div>
+                        <p>No datos</p>
+                    </div>
+                )
             ))}
             </tbody>
         </table>

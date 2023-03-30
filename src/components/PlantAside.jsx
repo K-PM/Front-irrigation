@@ -1,33 +1,37 @@
 import "../assets/css/PlantAside.css";
 import userDefault from "../assets/image/USER.png";
-import logOut from "../assets/image/logoutB.png";
-import userNoDefaul from "../assets/image/aguaN.png";
-import {UseUser} from "../context/UserProvider"
+import imgLogOut from "../assets/image/logoutB.png";
+import userNoDefault from "../assets/image/aguaN.png";
 import { useState } from "react";
 import { useEffect } from "react";
-import userprofile from "../assets/image/USER.png"
+import { useNavigate } from "react-router-dom";
+import { UseUser } from "../context/UserProvider";
+UseUser
 
 function PlantAside() {
-    const [user, setUser]= useState([]);
+    const {logout, user}=UseUser();
+    const navigate=useNavigate();
+    const [userLogin, setUserLogin]= useState([]);
 
     useEffect(()=>{
-      setUser({
-        name: 'juan',
-        profilePicture: userprofile
+      setUserLogin({
+        name: user.name,
+        profilePicture: user.profile
       })
+      console.log(user.profile)
     },[]);
 
     const handleClick=()=>{
-        navigate('/home')
+        logout();
+        navigate('/home');
     }
     
   return (
     <aside className="plant-aside">
       <div>
-        <img src={user.profilePicture!=""?user.profilePicture : userDefault} className="users" />
-        <h3>${user.name}</h3>
-        //aqui tiene que ir un input de tipo file
-        <img src={logOut} className="logoutLogo" />
+        <img src={userLogin.profilePicture!= ""? userLogin.profilePicture : userNoDefault} className="users" />
+        <h3>{userLogin.name}</h3>
+        <img src={imgLogOut} className="logoutLogo" />
       </div>
       <input
         type="buttom"
